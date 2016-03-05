@@ -1,3 +1,4 @@
+#define _USE_MATH_DEFINES
 #include <math.h>
 #include "SceneReader.h"
 #include <stdlib.h>
@@ -5,6 +6,9 @@
 #include <stdio.h>
 
  char* scene;
+
+ //camera control
+ static float alfa = 0, beta = 0, raio = 15, k = 0.02;
 
 void changeSize(int w, int h) {
 
@@ -39,7 +43,7 @@ void renderScene(void) {
 
 	// set the camera
 	glLoadIdentity();
-	gluLookAt(0.0, 0.0, 0.0,
+	gluLookAt(raio*cos(beta)*sin(alfa), raio*sin(beta), raio*cos(beta)*cos(alfa),
 		0.0, 0.0, 0.0,
 		0.0f, 1.0f, 0.0f);
 
@@ -48,7 +52,7 @@ void renderScene(void) {
 
 	// put drawing instructions here
 		
-	
+	drawScene(scene);
 
 	// End of frame
 	glutSwapBuffers();
@@ -57,7 +61,43 @@ void renderScene(void) {
 
 
 // write function to process keyboard events
+void keyboardSpecial(int key, int x, int y) {
+	switch (key) {
 
+	case GLUT_KEY_UP:
+		if (beta < (M_PI / 2 - k))
+			beta += k;
+		break;
+
+	case GLUT_KEY_DOWN:
+		if (beta > -(M_PI / 2 - k))
+			beta -= k;
+		break;
+
+	case GLUT_KEY_LEFT:
+		alfa -= k;
+		break;
+
+	case GLUT_KEY_RIGHT:
+		alfa += k;
+		break;
+
+	}
+	glutPostRedisplay();
+}
+
+void KeyBoard(unsigned char key, int x, int y) {
+	switch (key) {
+		case '+':
+			raio -= 0.5;
+			break;
+			
+		case '-':
+			raio += 0.5;
+			break;
+	}	
+	glutPostRedisplay();
+}
 
 
 // write function to process menu events
@@ -75,11 +115,14 @@ int main(int argc, char **argv) {
 	glutInitWindowPosition(100, 100);
 	glutInitWindowSize(800, 800);
 	glutCreateWindow("Projecto de CG");
+	glutIdleFunc(renderScene);
 
 
 	// Required callback registry 
 	glutDisplayFunc(renderScene);
 	glutReshapeFunc(changeSize);
+	glutSpecialFunc(keyboardSpecial);
+	glutKeyboardFunc(KeyBoard);
 
 	// put here the registration of the keyboard and menu callbacks
 
@@ -88,7 +131,7 @@ int main(int argc, char **argv) {
 	// put here the definition of the menu 
 
 
-	
+	readScene(scene);
 
 	//  OpenGL settings
 	glEnable(GL_DEPTH_TEST);

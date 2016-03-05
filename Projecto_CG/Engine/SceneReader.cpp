@@ -10,27 +10,37 @@ using namespace std;
 tinyxml2::XMLDocument xmlDoc;
 
 vector<model> allModels;
-vector<int> allModels2;
-int *TriangleBuffer;
+
 bool FileLoaded = false;
 
+
+
+static void readVertexs(XMLElement*element, model *model) {
+	element = element->FirstChildElement("Vertex");
+	while (element != NULL) {
+		point p;
+		element->QueryFloatAttribute("X", &p.x);
+		element->QueryFloatAttribute("Y", &p.y);
+		element->QueryFloatAttribute("Z", &p.z);
+
+		model->vertexs.push_back(p);
+		element = element->NextSiblingElement("Vertex");
+	}
+}
+
+
+
+
 static model readTriangles(const char * filename) {
-	XMLDocument xmlDoc2;
+	using namespace tinyxml2;
+	XMLDocument xmlDoc;
 	model model;
-	xmlDoc2.LoadFile(filename);
-	XMLNode * first = xmlDoc2.FirstChild();
+	xmlDoc.LoadFile(filename);
+	XMLNode * first = xmlDoc.FirstChild();
 	XMLElement * element = first->FirstChildElement("Triangle");
 
-	while (element != NULL) {
-		element = element->FirstChildElement("Vertex");
-		while (element != NULL) {
-			float x = atoi(element->Attribute("X"));
-			float y = atoi(element->Attribute("Y"));
-			float z = atoi(element->Attribute("Z"));
-			point p; p.x = x; p.y = y; p.z = z;
-			model.vertexs.push_back(p);
-			element = element->NextSiblingElement("Vertex");
-		}
+	while (element != NULL) {		
+		readVertexs(element, &model);
 		element = element->NextSiblingElement("Triangle");
 	}
 
@@ -49,7 +59,8 @@ void readScene(char * filename) {
 	
 	FileLoaded = true;
 	XMLNode *orig = xmlDoc.FirstChild();
-	orig = orig->FirstChildElement("Scene");
+
+	
 	XMLElement * modelo = orig->FirstChildElement("model");
 	vector<model> modelos;
 
@@ -58,8 +69,9 @@ void readScene(char * filename) {
 		const char * name;
 		name = modelo->Attribute("file");
 		if (name) {
+			
 			Model = readTriangles(name);
-			allModels2.push_back(n++);
+			
 		}
 		
 		modelos.push_back(Model);
@@ -74,10 +86,19 @@ void readScene(char * filename) {
 
 
  void drawScene(char *filename) {
-	for (int i = 0; i < allModels2.size();i++)
-	glDrawArrays(GL_TRIANGLES, 0, allModels[allModels2[i]].vertexs.size()/3);
 
-
+	 typedef vector<model>::iterator it_type;
+	 
+	 for (it_type iterator = allModels.begin(); iterator != allModels.end(); ++iterator) {
+		 glBegin(GL_TRIANGLES);
+		 for (int i = 0; i < iterator->vertexs.size(); i++) {
+			 
+			 glVertex3f(iterator->vertexs[i].x, iterator->vertexs[i].y, iterator->vertexs[i].z);
+		 }
+		 glEnd();
+	 }
+		
+				
 
 
 }

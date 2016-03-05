@@ -101,20 +101,20 @@ static void drawBoxinXML(float comprimento, float largura, float altura, char * 
 
 
 	//face de baixo
-	writeTriangleinXML(orig, p3, p4, p8);
-	writeTriangleinXML(orig, p8, p7, p3);
+	writeTriangleinXML(orig, p7, p8, p4);
+	writeTriangleinXML(orig, p4, p3, p7);
 
 	//face de tras
-	writeTriangleinXML(orig, p7, p8, p6);
-	writeTriangleinXML(orig, p6, p5, p7);
+	writeTriangleinXML(orig, p8, p7, p5);
+	writeTriangleinXML(orig, p5, p6, p8);
 
 	//face da direita
 	writeTriangleinXML(orig, p4, p8, p6);
 	writeTriangleinXML(orig, p6, p2, p4);
 
 	//face da esquerda
-	writeTriangleinXML(orig, p3, p7, p5);
-	writeTriangleinXML(orig, p5, p1, p3);
+	writeTriangleinXML(orig, p7, p3, p1);
+	writeTriangleinXML(orig, p1, p5, p7);
 
 	//face de cima
 	writeTriangleinXML(orig, p1, p2, p6);
