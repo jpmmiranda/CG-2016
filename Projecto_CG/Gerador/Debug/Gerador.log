@@ -1,6 +1,1 @@
-﻿  Gerador.cpp
-c:\users\tiago\desktop\cg\cg-2016\projecto_cg\gerador\gerador.cpp(133): warning C4101: 'p3': unreferenced local variable
-c:\users\tiago\desktop\cg\cg-2016\projecto_cg\gerador\gerador.cpp(133): warning C4101: 'p1': unreferenced local variable
-c:\users\tiago\desktop\cg\cg-2016\projecto_cg\gerador\gerador.cpp(133): warning C4101: 'p4': unreferenced local variable
-c:\users\tiago\desktop\cg\cg-2016\projecto_cg\gerador\gerador.cpp(133): warning C4101: 'p2': unreferenced local variable
-  Gerador.vcxproj -> C:\Users\Tiago\Desktop\CG\CG-2016\Projecto_CG\Debug\Gerador.exe
+﻿  Gerador.vcxproj -> C:\Users\Asus\Desktop\Universidade\3 ano\2º Semestre\Computação Gráfica\Trabalho\CG-2016\Projecto_CG\Debug\Gerador.exe

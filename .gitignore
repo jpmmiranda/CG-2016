@@ -1,0 +1,10 @@
+*.exe
+*.obj
+Projecto_CG/Gerador/Debug/Gerador.log
+*.log
+*.tlog
+*.opendb
+Projecto_CG/Projecto_CG.sdf
+*.log
+*.lastbuildstate
+*.pdb
