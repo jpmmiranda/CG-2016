@@ -1,0 +1,12 @@
+<Plane>
+    <Triangle>
+        <Vertex X="-2.5" Y="0" Z="2.5"/>
+        <Vertex X="2.5" Y="0" Z="2.5"/>
+        <Vertex X="2.5" Y="0" Z="-2.5"/>
+    </Triangle>
+    <Triangle>
+        <Vertex X="2.5" Y="0" Z="-2.5"/>
+        <Vertex X="-2.5" Y="0" Z="-2.5"/>
+        <Vertex X="-2.5" Y="0" Z="2.5"/>
+    </Triangle>
+</Plane>

@@ -1,0 +1,5 @@
+﻿  SceneReader.cpp
+c:\users\tiago\desktop\cg\cg-2016\projecto_cg\engine\scenereader.cpp(77): warning C4018: '<': signed/unsigned mismatch
+  Engine.cpp
+  Generating Code...
+  Engine.vcxproj -> C:\Users\Tiago\Desktop\CG\CG-2016\Projecto_CG\Debug\Engine.exe
