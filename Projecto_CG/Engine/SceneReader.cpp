@@ -92,7 +92,8 @@ void readScene(char * filename) {
 	 for (it_type iterator = allModels.begin(); iterator != allModels.end(); ++iterator) {
 		 glBegin(GL_TRIANGLES);
 		 for (int i = 0; i < iterator->vertexs.size(); i++) {
-			 
+			 glColor3f(0, 0, 1);
+			
 			 glVertex3f(iterator->vertexs[i].x, iterator->vertexs[i].y, iterator->vertexs[i].z);
 		 }
 		 glEnd();

@@ -95,6 +95,12 @@ void KeyBoard(unsigned char key, int x, int y) {
 		case '-':
 			raio += 0.5;
 			break;
+		case 'l':
+			glPolygonMode(GL_FRONT_AND_BACK, GL_LINE);
+			break;
+		case 'o':
+			glPolygonMode(GL_FRONT_AND_BACK, GL_FILL);
+			break;
 	}	
 	glutPostRedisplay();
 }
@@ -125,7 +131,7 @@ int main(int argc, char **argv) {
 	glutKeyboardFunc(KeyBoard);
 
 	// put here the registration of the keyboard and menu callbacks
-
+	
 
 
 	// put here the definition of the menu 
