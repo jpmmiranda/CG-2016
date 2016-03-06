@@ -73,9 +73,9 @@ void readScene(char * filename) {
 			Model = readTriangles(name);
 			
 		}
-		
+		printf("\n\n %s \n\n", name);
 		modelos.push_back(Model);
-		modelo = orig->NextSiblingElement("model");
+		modelo = modelo->NextSiblingElement("model");
 
 	}
 	
@@ -88,15 +88,20 @@ void readScene(char * filename) {
  void drawScene(char *filename) {
 
 	 typedef vector<model>::iterator it_type;
-	 
+	 int color = 0;
 	 for (it_type iterator = allModels.begin(); iterator != allModels.end(); ++iterator) {
+
 		 glBegin(GL_TRIANGLES);
+		 if(color%2==0) glColor3f(0, 0, 1);
+		 else glColor3f(1, 1, 1);
 		 for (int i = 0; i < iterator->vertexs.size(); i++) {
-			 glColor3f(0, 0, 1);
+			 
 			
 			 glVertex3f(iterator->vertexs[i].x, iterator->vertexs[i].y, iterator->vertexs[i].z);
 		 }
+		 color++;
 		 glEnd();
+		 
 	 }
 		
 				
