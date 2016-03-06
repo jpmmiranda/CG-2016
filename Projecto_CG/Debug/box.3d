@@ -1,62 +1,62 @@
 <Box>
     <Triangle>
-        <Vertex X="-3.5" Y="-3.5" Z="3.5"/>
-        <Vertex X="3.5" Y="-3.5" Z="3.5"/>
-        <Vertex X="3.5" Y="3.5" Z="3.5"/>
+        <Vertex X="-2.5" Y="-3.5" Z="3"/>
+        <Vertex X="2.5" Y="-3.5" Z="3"/>
+        <Vertex X="2.5" Y="3.5" Z="3"/>
     </Triangle>
     <Triangle>
-        <Vertex X="3.5" Y="3.5" Z="3.5"/>
-        <Vertex X="-3.5" Y="3.5" Z="3.5"/>
-        <Vertex X="-3.5" Y="-3.5" Z="3.5"/>
+        <Vertex X="2.5" Y="3.5" Z="3"/>
+        <Vertex X="-2.5" Y="3.5" Z="3"/>
+        <Vertex X="-2.5" Y="-3.5" Z="3"/>
     </Triangle>
     <Triangle>
-        <Vertex X="-3.5" Y="-3.5" Z="-3.5"/>
-        <Vertex X="3.5" Y="-3.5" Z="-3.5"/>
-        <Vertex X="3.5" Y="-3.5" Z="3.5"/>
+        <Vertex X="-2.5" Y="-3.5" Z="-3"/>
+        <Vertex X="2.5" Y="-3.5" Z="-3"/>
+        <Vertex X="2.5" Y="-3.5" Z="3"/>
     </Triangle>
     <Triangle>
-        <Vertex X="3.5" Y="-3.5" Z="3.5"/>
-        <Vertex X="-3.5" Y="-3.5" Z="3.5"/>
-        <Vertex X="-3.5" Y="-3.5" Z="-3.5"/>
+        <Vertex X="2.5" Y="-3.5" Z="3"/>
+        <Vertex X="-2.5" Y="-3.5" Z="3"/>
+        <Vertex X="-2.5" Y="-3.5" Z="-3"/>
     </Triangle>
     <Triangle>
-        <Vertex X="3.5" Y="-3.5" Z="-3.5"/>
-        <Vertex X="-3.5" Y="-3.5" Z="-3.5"/>
-        <Vertex X="-3.5" Y="3.5" Z="-3.5"/>
+        <Vertex X="2.5" Y="-3.5" Z="-3"/>
+        <Vertex X="-2.5" Y="-3.5" Z="-3"/>
+        <Vertex X="-2.5" Y="3.5" Z="-3"/>
     </Triangle>
     <Triangle>
-        <Vertex X="-3.5" Y="3.5" Z="-3.5"/>
-        <Vertex X="3.5" Y="3.5" Z="-3.5"/>
-        <Vertex X="3.5" Y="-3.5" Z="-3.5"/>
+        <Vertex X="-2.5" Y="3.5" Z="-3"/>
+        <Vertex X="2.5" Y="3.5" Z="-3"/>
+        <Vertex X="2.5" Y="-3.5" Z="-3"/>
     </Triangle>
     <Triangle>
-        <Vertex X="3.5" Y="-3.5" Z="3.5"/>
-        <Vertex X="3.5" Y="-3.5" Z="-3.5"/>
-        <Vertex X="3.5" Y="3.5" Z="-3.5"/>
+        <Vertex X="2.5" Y="-3.5" Z="3"/>
+        <Vertex X="2.5" Y="-3.5" Z="-3"/>
+        <Vertex X="2.5" Y="3.5" Z="-3"/>
     </Triangle>
     <Triangle>
-        <Vertex X="3.5" Y="3.5" Z="-3.5"/>
-        <Vertex X="3.5" Y="3.5" Z="3.5"/>
-        <Vertex X="3.5" Y="-3.5" Z="3.5"/>
+        <Vertex X="2.5" Y="3.5" Z="-3"/>
+        <Vertex X="2.5" Y="3.5" Z="3"/>
+        <Vertex X="2.5" Y="-3.5" Z="3"/>
     </Triangle>
     <Triangle>
-        <Vertex X="-3.5" Y="-3.5" Z="-3.5"/>
-        <Vertex X="-3.5" Y="-3.5" Z="3.5"/>
-        <Vertex X="-3.5" Y="3.5" Z="3.5"/>
+        <Vertex X="-2.5" Y="-3.5" Z="-3"/>
+        <Vertex X="-2.5" Y="-3.5" Z="3"/>
+        <Vertex X="-2.5" Y="3.5" Z="3"/>
     </Triangle>
     <Triangle>
-        <Vertex X="-3.5" Y="3.5" Z="3.5"/>
-        <Vertex X="-3.5" Y="3.5" Z="-3.5"/>
-        <Vertex X="-3.5" Y="-3.5" Z="-3.5"/>
+        <Vertex X="-2.5" Y="3.5" Z="3"/>
+        <Vertex X="-2.5" Y="3.5" Z="-3"/>
+        <Vertex X="-2.5" Y="-3.5" Z="-3"/>
     </Triangle>
     <Triangle>
-        <Vertex X="-3.5" Y="3.5" Z="3.5"/>
-        <Vertex X="3.5" Y="3.5" Z="3.5"/>
-        <Vertex X="3.5" Y="3.5" Z="-3.5"/>
+        <Vertex X="-2.5" Y="3.5" Z="3"/>
+        <Vertex X="2.5" Y="3.5" Z="3"/>
+        <Vertex X="2.5" Y="3.5" Z="-3"/>
     </Triangle>
     <Triangle>
-        <Vertex X="3.5" Y="3.5" Z="-3.5"/>
-        <Vertex X="-3.5" Y="3.5" Z="-3.5"/>
-        <Vertex X="-3.5" Y="3.5" Z="3.5"/>
+        <Vertex X="2.5" Y="3.5" Z="-3"/>
+        <Vertex X="-2.5" Y="3.5" Z="-3"/>
+        <Vertex X="-2.5" Y="3.5" Z="3"/>
     </Triangle>
 </Box>
