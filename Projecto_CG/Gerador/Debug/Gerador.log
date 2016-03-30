@@ -1,19 +1,19 @@
 ﻿  Gerador.cpp
-c:\users\tiago\desktop\cg\cg-2016\projecto_cg\gerador\gerador.cpp(135): warning C4244: '+=': conversion from 'double' to 'float', possible loss of data
-c:\users\tiago\desktop\cg\cg-2016\projecto_cg\gerador\gerador.cpp(146): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
-c:\users\tiago\desktop\cg\cg-2016\projecto_cg\gerador\gerador.cpp(148): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
-c:\users\tiago\desktop\cg\cg-2016\projecto_cg\gerador\gerador.cpp(160): warning C4244: '+=': conversion from 'double' to 'float', possible loss of data
-c:\users\tiago\desktop\cg\cg-2016\projecto_cg\gerador\gerador.cpp(169): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+c:\users\tiago\desktop\cg\cg-2016\projecto_cg\gerador\gerador.cpp(136): warning C4244: '+=': conversion from 'double' to 'float', possible loss of data
+c:\users\tiago\desktop\cg\cg-2016\projecto_cg\gerador\gerador.cpp(147): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+c:\users\tiago\desktop\cg\cg-2016\projecto_cg\gerador\gerador.cpp(150): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+c:\users\tiago\desktop\cg\cg-2016\projecto_cg\gerador\gerador.cpp(162): warning C4244: '+=': conversion from 'double' to 'float', possible loss of data
 c:\users\tiago\desktop\cg\cg-2016\projecto_cg\gerador\gerador.cpp(171): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
-c:\users\tiago\desktop\cg\cg-2016\projecto_cg\gerador\gerador.cpp(177): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+c:\users\tiago\desktop\cg\cg-2016\projecto_cg\gerador\gerador.cpp(173): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
 c:\users\tiago\desktop\cg\cg-2016\projecto_cg\gerador\gerador.cpp(179): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
-c:\users\tiago\desktop\cg\cg-2016\projecto_cg\gerador\gerador.cpp(190): warning C4244: '+=': conversion from 'double' to 'float', possible loss of data
-c:\users\tiago\desktop\cg\cg-2016\projecto_cg\gerador\gerador.cpp(200): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+c:\users\tiago\desktop\cg\cg-2016\projecto_cg\gerador\gerador.cpp(181): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+c:\users\tiago\desktop\cg\cg-2016\projecto_cg\gerador\gerador.cpp(192): warning C4244: '+=': conversion from 'double' to 'float', possible loss of data
 c:\users\tiago\desktop\cg\cg-2016\projecto_cg\gerador\gerador.cpp(202): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
-c:\users\tiago\desktop\cg\cg-2016\projecto_cg\gerador\gerador.cpp(158): warning C4101: 'l2': unreferenced local variable
-c:\users\tiago\desktop\cg\cg-2016\projecto_cg\gerador\gerador.cpp(223): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
-c:\users\tiago\desktop\cg\cg-2016\projecto_cg\gerador\gerador.cpp(224): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
-c:\users\tiago\desktop\cg\cg-2016\projecto_cg\gerador\gerador.cpp(227): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
-c:\users\tiago\desktop\cg\cg-2016\projecto_cg\gerador\gerador.cpp(228): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
-c:\users\tiago\desktop\cg\cg-2016\projecto_cg\gerador\gerador.cpp(287): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+c:\users\tiago\desktop\cg\cg-2016\projecto_cg\gerador\gerador.cpp(204): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+c:\users\tiago\desktop\cg\cg-2016\projecto_cg\gerador\gerador.cpp(160): warning C4101: 'l2': unreferenced local variable
+c:\users\tiago\desktop\cg\cg-2016\projecto_cg\gerador\gerador.cpp(225): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+c:\users\tiago\desktop\cg\cg-2016\projecto_cg\gerador\gerador.cpp(226): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+c:\users\tiago\desktop\cg\cg-2016\projecto_cg\gerador\gerador.cpp(229): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+c:\users\tiago\desktop\cg\cg-2016\projecto_cg\gerador\gerador.cpp(230): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+c:\users\tiago\desktop\cg\cg-2016\projecto_cg\gerador\gerador.cpp(289): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
   Gerador.vcxproj -> C:\Users\Tiago\Desktop\CG\CG-2016\Projecto_CG\Debug\Gerador.exe

@@ -131,20 +131,22 @@ static void drawConeinXML(float raio, float altura, float fatias, float camadas,
 	xmlDoc.InsertEndChild(orig);
 
 	point p1, p2, p3, p4;
+	float h = altura / 2;
 
 	for (float i = 0; i < 2 * M_PI; i += 2 * M_PI / fatias) {
 
 		//base inferior
 		p1.x = 0;
-		p1.y = 0;
+		p1.y = -h;
 		p1.z = 0;
 
 		p2.x = raio*sin(i);
-		p2.y = 0;
+		p2.y = -h;
 		p2.z = raio *cos(i);
 
 		p3.x = raio*sin(i + 2 * M_PI / fatias);
-		p3.y = 0;
+		p3.y = -h;
+
 		p3.z = raio *cos(i + 2 * M_PI / fatias);
 
 		writeTriangleinXML(orig, p1, p3, p2);
@@ -154,9 +156,9 @@ static void drawConeinXML(float raio, float altura, float fatias, float camadas,
 
 	float r = raio; // raio atual (utlizado na construcao das camadas 
 	float r1 = raio / camadas; // valor a retirar ao raio sempre que avancamos uma camada
-	float l1 = 0.0f;
+	float l1 = -h;
 	float l2;
-	for (float l = altura / camadas, l2 = l; l2 < altura; l2 += l) {
+	for (float l = (altura / camadas), l2 = -h+l; l2 < h; l2 += l) {
 		for (float i = 0; i < 2 * M_PI; i += 2 * M_PI / fatias) {
 
 
@@ -190,15 +192,15 @@ static void drawConeinXML(float raio, float altura, float fatias, float camadas,
 	for (float i = 0; i < 2 * M_PI; i += 2 * M_PI / fatias) {
 		//ultima camada
 		p1.x = 0;
-		p1.y = altura;
+		p1.y = h;
 		p1.z = 0;
 
 		p2.x = r1 * sin(i);
-		p2.y = altura - altura / camadas;
+		p2.y = h - altura / camadas;
 		p2.z = r1 * cos(i);
 
 		p3.x = r1 *sin(i + 2 * M_PI / fatias);
-		p3.y = altura - altura / camadas;
+		p3.y = h - altura/ camadas;
 		p3.z = r1 * cos(i + 2 * M_PI / fatias);
 
 		writeTriangleinXML(orig, p1, p2, p3);

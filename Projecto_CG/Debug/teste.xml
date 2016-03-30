@@ -1,4 +1,36 @@
 <Scene>
-	<model file="sphere.3d"/>
-	<model file="box.3d"/>
+	<group>
+		<translate X="0" Y="0" Z="0" />
+		<models>
+			<model file="sphere.3d"/>
+		</models>
+			<group>
+				<models>
+					<translate X="10" Y="0" Z="0" />		
+					<model file="box.3d"/>
+				</models>
+
+					<group>
+						<translate X="10" Y="0" Z="0" />
+						<rotate angle ="5" X="10" Y="0" Z="0" />
+						<models>		
+							<model file="cone.3d"/>
+						</models>
+					</group>
+			</group>
+			<group>
+				<scale X="5" Y="3" Z="1" />
+				<translate X="-10" Y="0" Z="0" />
+				
+				<models>		
+					<model file="box.3d"/>
+				</models>
+			</group>
+	</group>
+	<group>
+		<translate X="0" Y="0" Z="10" />
+		<models>
+			<model file="cone.3d"/>
+		</models>
+	</group>
 </Scene>

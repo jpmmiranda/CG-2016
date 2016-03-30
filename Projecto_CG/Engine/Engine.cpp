@@ -1,9 +1,12 @@
 #define _USE_MATH_DEFINES
+#include <GL/glew.h>
 #include <math.h>
 #include "SceneReader.h"
 #include <stdlib.h>
 #include <GL/glut.h>
 #include <stdio.h>
+#include <vector>
+#pragma comment(lib,"glew32.lib")
 
  char* scene;
 
@@ -52,7 +55,13 @@ void renderScene(void) {
 
 	// put drawing instructions here
 		
-	drawScene(scene);
+	try {
+		drawScene();
+	}
+	catch (int e) {
+		exceptions(e);
+		exit(-1);
+	}
 
 	// End of frame
 	glutSwapBuffers();
@@ -119,16 +128,19 @@ int main(int argc, char **argv) {
 	glutInit(&argc, argv);
 	glutInitDisplayMode(GLUT_DEPTH | GLUT_DOUBLE | GLUT_RGBA);
 	glutInitWindowPosition(100, 100);
-	glutInitWindowSize(800, 800);
+	glutInitWindowSize(200, 200);
 	glutCreateWindow("Projecto de CG");
-	glutIdleFunc(renderScene);
+	glewInit();
 
 
 	// Required callback registry 
 	glutDisplayFunc(renderScene);
+	glutIdleFunc(renderScene);
 	glutReshapeFunc(changeSize);
 	glutSpecialFunc(keyboardSpecial);
 	glutKeyboardFunc(KeyBoard);
+
+	glewInit();
 
 	// put here the registration of the keyboard and menu callbacks
 	
@@ -137,13 +149,21 @@ int main(int argc, char **argv) {
 	// put here the definition of the menu 
 
 
-	readScene(scene);
 
 	//  OpenGL settings
+	
 	glEnable(GL_DEPTH_TEST);
 	glEnable(GL_CULL_FACE);
 
 	
+	try {
+		prepareScene(scene);
+	}
+	catch (int e) {
+		exceptions(e);
+		return -1;
+	}
+
 
 	// enter GLUT's main cycle
 	glutMainLoop();
