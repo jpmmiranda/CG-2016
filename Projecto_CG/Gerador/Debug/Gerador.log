@@ -16,4 +16,5 @@ c:\users\tiago\desktop\cg\cg-2016\projecto_cg\gerador\gerador.cpp(226): warning 
 c:\users\tiago\desktop\cg\cg-2016\projecto_cg\gerador\gerador.cpp(229): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
 c:\users\tiago\desktop\cg\cg-2016\projecto_cg\gerador\gerador.cpp(230): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
 c:\users\tiago\desktop\cg\cg-2016\projecto_cg\gerador\gerador.cpp(289): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+  LINK : C:\Users\Tiago\Desktop\CG\CG-2016\Projecto_CG\Debug\Gerador.exe not found or not built by the last incremental link; performing full link
   Gerador.vcxproj -> C:\Users\Tiago\Desktop\CG\CG-2016\Projecto_CG\Debug\Gerador.exe
